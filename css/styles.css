@@ -94,5 +94,316 @@ header a:hover {
 
 /* End Header */
 
+/* Home */ 
+
+.home .email-link:hover, .home .email-link:focus, .eEjAsd .email-link:active {
+    background-color: rgba(100,255,218,0.1);
+    outline: none;
+}
+
+.home .email-link {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+    margin-top: 50px;
+}
+
+.home h1 {    
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.home h3 {
+    margin-top: 10px;
+    color: #8892b0;
+    line-height: 0.9;
+}
+
+/* End Home */
+
+/* Main */
+
+main {
+  margin-left: 25%;
+}
+
+.main-container {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hometext,
+.aboutme,
+.contact,
+.portfolio {
+  /* border: 1px solid #333; */
+  width: 50%;
+  /* margin-left: 250px; */
+  height: 500px;
+  color: #a8b2d1;
+  margin: auto;
+  padding: 20px;
+}
+
+.home,
+.about,
+.maincontact,
+.mainportfolio {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.hometext button {
+  margin-top: 30px;
+}
+
+.hometext a {
+  text-decoration: none;
+  color: #4eb3a5;
+  font-size: 16px;
+}
+
+.hometext h1 {
+  text-align: start;
+}
+
+/* About Me*/ 
+
+.about-me {
+  background-color: #112240;
+  height: 600px;
+}
+
+.about-me h2 {
+  margin-top: 0;
+}
+
+.numbered-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,32px);
+    white-space: nowrap;
+}
+
+.numbered-header::before {
+    position: relative;
+    bottom: 4px;    
+    margin-right: 10px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: clamp(16px,3vw,20px);
+    font-weight: 400;
+}
+
+.numbered-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #233554;
+}
+
+
+.about .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+
+
+p {
+    margin: 0px 0px 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.about-line ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(312px, 450px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;   
+}
+
+ul {    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.about-line ul.skills-list li::before {
+    content: "▹";
+    position: relative;
+    left: 0px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+
+/* Projects */ 
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.projects h2 {
+    font-size: clamp(24px,5vw,32px);
+}
+
+.portfolio .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(154.58px, 1fr));
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery img:hover {
+  opacity: 0.7;
+}
+
+/* Contact Me */ 
+
+.maincontact .overline {
+    display: block;
+    margin-bottom: 20px;
+    color: #64ffda;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #64ffda;
+}
+
+input[type="submit"] {
+    background-color: #112240;
+    color: #64ffda;
+}
+
+.maincontact .email-link {    
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: cubic-bezier(0.645,0.045,0.355,1);
+    margin-top: 50px;  
+}
+
+.maincontact .title {
+    font-size: clamp(40px, 5vw, 60px);
+}
+
+.maincontact .email-link:hover, .maincontact .email-link:focus, .maincontact .email-link:active {
+    background-color: #64ffda;
+    outline: none;
+}
+
+/* Footer */ 
+
+.main-footer {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-style {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    margin: 0px auto 10px;
+    color: #a8b2d1;
+}
+
+
+.footer-style ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(51, 50, 61);
+  opacity: 0.15;
+  margin: 20px;
+}
+
+.linetop {
+  position: relative;
+  bottom: 30px;
+}
+
+.linebottom {
+  position: relative;
+  margin-top: 60px;
+}
+
+
+
+
 
 
