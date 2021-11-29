@@ -171,7 +171,7 @@ main {
 
 .hometext a {
   text-decoration: none;
-  color: #4eb3a5;
+  color: #64ffda;
   font-size: 16px;
 }
 
@@ -385,22 +385,8 @@ input[type="submit"] {
     list-style: none;
 }
 
-.line {
-  height: 1px;
-  background-color: rgb(51, 50, 61);
-  opacity: 0.15;
-  margin: 20px;
-}
 
-.linetop {
-  position: relative;
-  bottom: 30px;
-}
 
-.linebottom {
-  position: relative;
-  margin-top: 60px;
-}
 
 
 
